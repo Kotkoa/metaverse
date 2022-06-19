@@ -8,7 +8,6 @@ export default function Header() {
                 <Logo className="p-28"/>
             </div>
             <div></div>
-
         </div>
     )
 }
