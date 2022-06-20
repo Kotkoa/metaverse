@@ -1,10 +1,10 @@
-import React from 'react'
-
-export default function Header() {
-  return (
-    <div className="flex items-center justify-between bg-[#2B2E35] py-6 px-[120px] text-white">
-      <img src="svg/logo.svg" alt="LOGO" />
-      <div className="p-0">Button</div>
-    </div>
-  )
+const Header = () => {
+    return (
+        <div className="bg-[#2B2E35] px-32 py-6 flex justify-between">
+            <img src="svg/Header/logo.svg" alt=""/>
+            <button className="rounded-[28px] bg-gradient-to-r from-[#FD6D1D] to-[#E53AD2] px-6 py-2.5 text-white text-opacity-90" type="button">Connect Wallet</button>
+        </div>
+    )
 }
+
+export {Header}
