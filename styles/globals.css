@@ -8,6 +8,11 @@
   }
 } */
 
+@font-face {
+  font-family: 'Blantic';
+  src: url('/public/fonts/Blantic.ttf');
+}
+
 html,
 body {
   padding: 0;

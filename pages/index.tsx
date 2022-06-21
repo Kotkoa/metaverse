@@ -17,7 +17,7 @@ const Home: NextPage = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis et tortor egestas mi curabitur varius
                 dignissim viverra.{' '}
               </p>
-              <button className="mt-[44px] rounded-[28px] bg-gradient-to-r from-[#FD6D1D] to-[#E53AD2] px-6 py-2.5 text-white text-opacity-90">
+              <button className="mt-[44px] rounded-[28px] bg-gradient-to-r from-[#FD6D1D] to-[#E53AD2] px-12 py-2.5 tracking-widestmore text-white text-opacity-90">
                 Explore
               </button>
             </div>
