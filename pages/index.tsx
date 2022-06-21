@@ -25,6 +25,7 @@ const Home: NextPage = () => {
               <img src="/png/first_page.png" alt="" className="w-full" />
             </div>
           </section>
+
         </main>
       </div>
     </div>

@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Blantic';
-  src: url('/public/fonts/Blantic.ttf');
+  src: url('/public/fonts/Blantic.ttf') format('ttf');;
 }
 
 html,
