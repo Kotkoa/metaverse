@@ -7,13 +7,13 @@ const Home: NextPage = () => {
     <div className="min-h-screen w-full bg-[#212429]">
       <div className="mx-auto max-w-[1440px]">
         <Header />
-        <main className="">
+        <main>
           <section className="flex h-[934px]">
-            <div className="mt-[217px] flex-1 pr-[82px] pl-[120px]">
-              <h1 className="text-[70px] font-bold uppercase text-white text-opacity-90">
+            <div className="mt-[217px] w-1/2 pr-[82px] pl-[120px]">
+              <h1 className=" text-[70px] font-bold uppercase tracking-widester text-white text-opacity-90">
                 Start your game jorney here
               </h1>
-              <p className="mt-[30px] text-white text-opacity-60">
+              <p className="mt-[30px] text-lg font-normal leading-[30px] text-white text-opacity-60">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis et tortor egestas mi curabitur varius
                 dignissim viverra.{' '}
               </p>
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
                 Explore
               </button>
             </div>
-            <div className="flex-1">
+            <div className="w-1/2">
               <img src="/png/first_page.png" alt="" className="w-full" />
             </div>
           </section>
