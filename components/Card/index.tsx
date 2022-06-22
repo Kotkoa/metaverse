@@ -1,8 +1,8 @@
 const Card = ({ name, highestBid, price, time, like }) => {
   return (
-    <div className="h-[404px] max-w-[282px] rounded-[18px] bg-[#2B2E35] p-3.5 shadow-md">
+    <div className="max-h-[404px] w-full max-w-[282px] rounded-[18px] bg-[#2B2E35] p-3.5 shadow-md">
       <div className="relative">
-        <img src="png/Cards/img.png" alt="cardImage" className="h-[254px] w-[254px]" />
+        <img src="png/Cards/img.png" alt="cardImage" className="w-full" />
         <div className="absolute top-[10px] left-[10px] flex content-center rounded-[20px] bg-[#2B2E35] py-2.5 pl-[14px] pr-[18px]">
           <img src="svg/Card/clock.svg" alt="clock" />
           <p className="ml-[10px] bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] bg-clip-text text-[14px] tracking-[0.05em] text-transparent">
