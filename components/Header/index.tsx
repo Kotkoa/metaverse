@@ -6,7 +6,8 @@ const Header = () => {
   return (
     <div className="flex justify-between bg-[#2B2E35] px-32 py-6">
       <Link href="/">
-        <Image src={Logo} alt="LOGO" width={98} height={40} />
+        <Logo />
+        {/* <Image src={Logo} alt="LOGO" width={98} height={40} /> */}
         {/* <div className="bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] bg-clip-text font-blantic text-[32px] tracking-[0.14em] text-white text-transparent">
           LOGO
         </div> */}
