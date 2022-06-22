@@ -2,7 +2,7 @@ import Image from 'next/image'
 import cardImage from '../../public/png/Cards/img.png'
 import Clock from '../../public/svg/Card/clock.svg'
 import Heart from '../../public/svg/Card/heart.svg'
-import Etherium from '../../public/svg/Card/ethereum.svg'
+import Ethereum from '../../public/svg/Card/ethereum.svg'
 
 const Card = ({ name, highestBid, price, time, like }) => {
   return (
@@ -24,7 +24,7 @@ const Card = ({ name, highestBid, price, time, like }) => {
           <h1 className="text-xl text-white opacity-90">{name}</h1>
           <p className="mt-2 text-sm text-white opacity-60">{highestBid}</p>
         </div>
-        <Etherium />
+        <Ethereum />
       </div>
       <div className="flex justify-between mt-5">
         <p className="text-base text-white opacity-90">Price</p>
