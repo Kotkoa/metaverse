@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Header } from '../components/Header'
 import { AchievementSection } from '../components/AchievementSection'
+import { CardPage } from '../components/CardPage'
 
 const Home: NextPage = () => {
   return (
@@ -9,7 +10,8 @@ const Home: NextPage = () => {
       <div className="mx-auto max-w-[1440px]">
         <Header />
         <main>
-          <section className="flex h-auto min-h-[934px]">
+          <CardPage />
+          {/* <section className="flex h-auto min-h-[934px]">
             <div className="mt-[217px] w-1/2 pr-[82px] pl-[120px]">
               <h1 className=" text-[70px] font-bold uppercase tracking-widester text-white text-opacity-90">
                 Start your game jorney here
@@ -26,7 +28,6 @@ const Home: NextPage = () => {
               <img src="/png/first_page.png" alt="" className="w-full" />
             </div>
           </section>
-
           <AchievementSection
             achievementCards={[
               {
@@ -81,7 +82,7 @@ const Home: NextPage = () => {
               { name: 'Tomahavk', highestBid: 'Highest Bid 1/1', price: '0.047 ETH', time: '08:10:00', like: true }
             ]}
             title="Gears"
-          />
+          /> */}
         </main>
       </div>
     </div>
