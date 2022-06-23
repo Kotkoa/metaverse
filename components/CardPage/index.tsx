@@ -10,6 +10,9 @@ import Stats from '../../public/svg/CardPage/stats.svg'
 import verified from '../../public/png/CardPage/Ellipse342.png'
 import CardPageButton from '../CardPageButton'
 import Checkin from '../../public/svg/CardPage/checkin.svg'
+import LocalMall from '../../public/svg/CardPage/local_mall.svg'
+import LocalOffer from '../../public/svg/CardPage/local_offer.svg'
+import Star from '../../public/svg/CardPage/star.svg'
 
 function CardPage() {
   return (
@@ -40,7 +43,7 @@ function CardPage() {
           </div>
         </div>
         <div className="flex w-1/2">
-          <div className="w-full ml-16">
+          <div className="w-full ml-16 mr-16">
             <h1 className="text-[40px] font-bold text-white text-opacity-90">Swamp</h1>
             <div className="flex items-center mt-5">
               <div className="bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] p-px rounded w-max mr-4 text-base">
@@ -58,9 +61,9 @@ function CardPage() {
               venenatis habitant velit dignissim porttitor purus et. Sed a vivamus ipsum semper arcu orci in nam
               bibendum. Volutpat sed eget tellus euismod proin nec.
             </p>
-            <div className=" mt-[72px] bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] p-px rounded-[18px]">
+            <div className=" mt-[58px] bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] p-px rounded-[18px]">
               <div className="bg-[#2B2E35] rounded-[18px] p-7">
-                <div className="flex">
+                <div className="flex items-center">
                   <div className="relative w-max">
                     <Image src={verified} alt="cardImage" width={48} height={48} />
                     <div className="absolute -right-[4px] bottom-[5px]">
@@ -68,21 +71,77 @@ function CardPage() {
                     </div>
                   </div>
                   <div className="ml-6">
-                    <div className="flex">
-                      <p>Highest bid by</p>
-                      <p>Vadim Dora</p>
+                    <div className="flex text-base">
+                      <p className="text-white tracking-widester text-opacity-60">Highest bid by</p>
+                      <p className="ml-1.5 font-medium text-white text-opacity-90">Vadim Dora</p>
                     </div>
-                    <div className="flex">
-                      <p>1.46 ETH</p>
-                      <p>$2,764.89</p>
+                    <div className="flex text-[28px]">
+                      <p className="font-semibold text-white text-opacity-90">1.46 ETH</p>
+                      <p className="ml-3 text-white text-opacity-60">$2,764.89</p>
                     </div>
                   </div>
                 </div>
-                <div className=""></div>
-                <div className=""></div>
+                <div className="flex justify-between mt-6 mb-5">
+                  <button
+                    type="button"
+                    className="rounded-[28px] bg-gradient-to-r from-[#FD6D1D] to-[#E53AD2] px-6 py-2.5 tracking-widestmore text-white text-opacity-90 inline-flex mr-4 h-min"
+                  >
+                    <LocalMall />
+                    <span className="ml-3">Buy now</span>
+                  </button>
+                  <button type="button" className="bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] p-px rounded-[28px]">
+                    <div className="bg-[#2B2E35] rounded-[28px] px-6 py-2.5 flex">
+                      <LocalOffer />
+                      <p className=" bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] bg-clip-text tracking-[0.05em] text-transparent ml-3">
+                        Place a bid
+                      </p>
+                    </div>
+                  </button>
+                </div>
+                <div className="">
+                  <span className="text-white text-opacity-60">Service fee</span>
+                  <span className="ml-4 font-medium text-white tracking-widester text-opacity-90">2.5%</span>
+                  <span className="ml-4 text-white tracking-widester text-opacity-60">2.563 ETH</span>
+                  <span className="ml-4 text-white tracking-widester text-opacity-60">$4,540.62</span>
+                </div>
               </div>
             </div>
-            <div className=""></div>
+            <div className="mt-12">
+              <div className="flex items-center">
+                <Star />
+                <h1 className="ml-3">Levels</h1>
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between">
+                  <p className="text-white text-opacity-60">ColorHue</p>
+                  <p className="text-white text-opacity-90 tracking-widester">254 of 255</p>
+                </div>
+                <div className="relative w-full">
+                  <div className="h-2.5 w-full bg-white bg-opacity-10 rounded-[5px] mt-1.5"></div>
+                  <div className="absolute top-0 left-0 w-[98%] bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] h-2.5 rounded-[5px]"></div>
+                </div>
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between">
+                  <p className="text-white text-opacity-60">Dimensions</p>
+                  <p className="text-white text-opacity-90 tracking-widester">11 of 17</p>
+                </div>
+                <div className="relative w-full">
+                  <div className="h-2.5 w-full bg-white bg-opacity-10 rounded-[5px] mt-1.5"></div>
+                  <div className="absolute top-0 left-0 w-9/12 bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] h-2.5 rounded-[5px]"></div>
+                </div>
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between">
+                  <p className="text-white text-opacity-60">Layers</p>
+                  <p className="text-white text-opacity-90 tracking-widester">3 of 3</p>
+                </div>
+                <div className="relative w-full">
+                  <div className="h-2.5 w-full bg-white bg-opacity-10 rounded-[5px] mt-1.5"></div>
+                  <div className="absolute top-0 left-0 w-full bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] h-2.5 rounded-[5px]"></div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="flex flex-col">
             <button
