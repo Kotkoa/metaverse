@@ -3,11 +3,7 @@ import Image from 'next/image'
 import CardImage from '../../public/png/CardPage/img.png'
 import Burger from '../../public/svg/CardPage/burger.svg'
 import Stats from '../../public/svg/CardPage/stats.svg'
-import verified from '../../public/png/CardPage/Ellipse342.png'
 import CardPageButton from '../CardPageButton'
-import Checkin from '../../public/svg/CardPage/checkin.svg'
-import LocalMall from '../../public/svg/CardPage/local_mall.svg'
-import LocalOffer from '../../public/svg/CardPage/local_offer.svg'
 import Star from '../../public/svg/CardPage/star.svg'
 import Button from '../ButtonNav/'
 import Close from '../../public/svg/CardPage/close.svg'
@@ -16,6 +12,7 @@ import Like from '../../public/svg/Card/heart.svg'
 import More from '../../public/svg/CardPage/more_horiz.svg'
 import IconHeading from '../IconHeading/'
 import ProgresLevel from '../ProgresLevel'
+import BidTable from '../BidTable'
 
 function CardPage() {
   return (
@@ -58,51 +55,16 @@ function CardPage() {
               venenatis habitant velit dignissim porttitor purus et. Sed a vivamus ipsum semper arcu orci in nam
               bibendum. Volutpat sed eget tellus euismod proin nec.
             </p>
-            <div className=" mt-[58px] bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] p-px rounded-[18px]">
-              <div className="bg-[#2B2E35] rounded-[18px] p-7">
-                <div className="flex items-center">
-                  <div className="relative w-max">
-                    <Image src={verified} alt="cardImage" width={48} height={48} />
-                    <div className="absolute -right-[4px] bottom-[5px]">
-                      <Checkin />
-                    </div>
-                  </div>
-                  <div className="ml-6">
-                    <div className="flex text-base">
-                      <p className="text-white tracking-widester text-opacity-60">Highest bid by</p>
-                      <p className="ml-1.5 font-medium text-white text-opacity-90">Vadim Dora</p>
-                    </div>
-                    <div className="flex text-[28px]">
-                      <p className="font-semibold text-white text-opacity-90">1.46 ETH</p>
-                      <p className="ml-3 text-white text-opacity-60">$2,764.89</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex justify-between mt-6 mb-5">
-                  <button
-                    type="button"
-                    className="rounded-[28px] bg-gradient-to-r from-[#FD6D1D] to-[#E53AD2] px-6 py-2.5 tracking-widestmore text-white text-opacity-90 inline-flex mr-4 h-min"
-                  >
-                    <LocalMall />
-                    <span className="ml-3">Buy now</span>
-                  </button>
-                  <button type="button" className="bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] p-px rounded-[28px]">
-                    <div className="bg-[#2B2E35] rounded-[28px] px-6 py-2.5 flex">
-                      <LocalOffer />
-                      <p className=" bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] bg-clip-text tracking-[0.05em] text-transparent ml-3">
-                        Place a bid
-                      </p>
-                    </div>
-                  </button>
-                </div>
-                <div className="">
-                  <span className="text-white text-opacity-60">Service fee</span>
-                  <span className="ml-4 font-medium text-white tracking-widester text-opacity-90">2.5%</span>
-                  <span className="ml-4 text-white tracking-widester text-opacity-60">2.563 ETH</span>
-                  <span className="ml-4 text-white tracking-widester text-opacity-60">$4,540.62</span>
-                </div>
-              </div>
-            </div>
+            <BidTable
+              fullName="Vadim Dora"
+              priceEth="1.46"
+              priceUsd="2,764.89"
+              clickBuy={() => {}}
+              clickBid={() => {}}
+              serviceFee="2.5"
+              totalEth="2.563"
+              totalUsd="4,540.62"
+            />
             <div className="mt-12">
               <IconHeading icon={<Star />} heading="Levels" />
               <ProgresLevel title="ColoHue" valueExist={253} valueTotal={255} />
