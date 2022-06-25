@@ -1,9 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Close from '../../public/svg/CardPage/close.svg'
-import Upload from '../../public/svg/CardPage/file_upload.svg'
-import Like from '../../public/svg/Card/heart.svg'
-import More from '../../public/svg/CardPage/more_horiz.svg'
 import CardImage from '../../public/png/CardPage/img.png'
 import Burger from '../../public/svg/CardPage/burger.svg'
 import Stats from '../../public/svg/CardPage/stats.svg'
@@ -13,6 +9,13 @@ import Checkin from '../../public/svg/CardPage/checkin.svg'
 import LocalMall from '../../public/svg/CardPage/local_mall.svg'
 import LocalOffer from '../../public/svg/CardPage/local_offer.svg'
 import Star from '../../public/svg/CardPage/star.svg'
+import Button from '../ButtonNav/'
+import Close from '../../public/svg/CardPage/close.svg'
+import Upload from '../../public/svg/CardPage/file_upload.svg'
+import Like from '../../public/svg/Card/heart.svg'
+import More from '../../public/svg/CardPage/more_horiz.svg'
+import IconHeading from '../IconHeading/'
+import ProgresLevel from '../ProgresLevel'
 
 function CardPage() {
   return (
@@ -21,10 +24,7 @@ function CardPage() {
         <div className="w-1/2 pr-3">
           <Image src={CardImage} alt="cardImage" layout="responsive" />
           <div className="mt-12">
-            <div className="flex items-center">
-              <Burger />
-              <h1 className="ml-3">Properties</h1>
-            </div>
+            <IconHeading icon={<Burger />} heading="Properties" />
             <div className="grid grid-cols-4 gap-5 mt-8">
               {Buttons.map((button) => (
                 <CardPageButton property={button.property} value={button.value} key={button.property} />
@@ -32,10 +32,7 @@ function CardPage() {
             </div>
           </div>
           <div className="mt-12 mb-20">
-            <div className="flex items-center">
-              <Stats />
-              <h1 className="ml-3">Stats</h1>
-            </div>
+            <IconHeading icon={<Stats />} heading="Stats" />
             <div className="flex justify-between mt-8 text-base text-white text-opacity-90">
               <p>Token ID</p>
               <p>12,233 of 16,383</p>
@@ -107,67 +104,17 @@ function CardPage() {
               </div>
             </div>
             <div className="mt-12">
-              <div className="flex items-center">
-                <Star />
-                <h1 className="ml-3">Levels</h1>
-              </div>
-              <div className="mt-8">
-                <div className="flex justify-between">
-                  <p className="text-white text-opacity-60">ColorHue</p>
-                  <p className="text-white text-opacity-90 tracking-widester">254 of 255</p>
-                </div>
-                <div className="relative w-full">
-                  <div className="h-2.5 w-full bg-white bg-opacity-10 rounded-[5px] mt-1.5"></div>
-                  <div className="absolute top-0 left-0 w-[98%] bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] h-2.5 rounded-[5px]"></div>
-                </div>
-              </div>
-              <div className="mt-8">
-                <div className="flex justify-between">
-                  <p className="text-white text-opacity-60">Dimensions</p>
-                  <p className="text-white text-opacity-90 tracking-widester">11 of 17</p>
-                </div>
-                <div className="relative w-full">
-                  <div className="h-2.5 w-full bg-white bg-opacity-10 rounded-[5px] mt-1.5"></div>
-                  <div className="absolute top-0 left-0 w-9/12 bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] h-2.5 rounded-[5px]"></div>
-                </div>
-              </div>
-              <div className="mt-8">
-                <div className="flex justify-between">
-                  <p className="text-white text-opacity-60">Layers</p>
-                  <p className="text-white text-opacity-90 tracking-widester">3 of 3</p>
-                </div>
-                <div className="relative w-full">
-                  <div className="h-2.5 w-full bg-white bg-opacity-10 rounded-[5px] mt-1.5"></div>
-                  <div className="absolute top-0 left-0 w-full bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] h-2.5 rounded-[5px]"></div>
-                </div>
-              </div>
+              <IconHeading icon={<Star />} heading="Levels" />
+              <ProgresLevel title="ColoHue" valueExist={253} valueTotal={255} />
+              <ProgresLevel title="Dimensions" valueExist={11} valueTotal={17} />
+              <ProgresLevel title="Layers" valueExist={3} valueTotal={3} />
             </div>
           </div>
           <div className="flex flex-col">
-            <button
-              type="button"
-              className="w-12 flex justify-center items-center h-12 hover:bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] bg-[#2B2E35] rounded-3xl"
-            >
-              <Close />
-            </button>
-            <button
-              type="button"
-              className="w-12 flex justify-center items-center mt-5 h-12 hover:bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] bg-[#2B2E35] rounded-3xl"
-            >
-              <Upload />
-            </button>
-            <button
-              type="button"
-              className="w-12 flex justify-center items-center mt-5 h-12 hover:bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] bg-[#2B2E35] rounded-3xl"
-            >
-              <Like />
-            </button>
-            <button
-              type="button"
-              className="w-12 flex justify-center items-center mt-5 h-12 hover:bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] bg-[#2B2E35] rounded-3xl"
-            >
-              <More />
-            </button>
+            <Button icon={<Close />} />
+            <Button icon={<Upload />} />
+            <Button icon={<Like />} />
+            <Button icon={<More />} />
           </div>
         </div>
       </div>
