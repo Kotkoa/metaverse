@@ -12,8 +12,9 @@ import Upload from '../../public/svg/CardPage/file_upload.svg'
 import Like from '../../public/svg/Card/heart.svg'
 import More from '../../public/svg/CardPage/more_horiz.svg'
 import IconHeading from '../../components/IconHeading'
-import ProgresLevel from '../../components/ProgresLevel'
+import ProgressLevel from '../../components/ProgressLevel'
 import BidTable from '../../components/BidTable'
+import { Carousel } from '../../components/Carousel'
 
 function CardPage() {
   return (
@@ -69,9 +70,9 @@ function CardPage() {
               />
               <div className="mt-12">
                 <IconHeading icon={<Star />} heading="Levels" />
-                <ProgresLevel title="ColoHue" valueExist={253} valueTotal={255} />
-                <ProgresLevel title="Dimensions" valueExist={11} valueTotal={17} />
-                <ProgresLevel title="Layers" valueExist={3} valueTotal={3} />
+                <ProgressLevel title="ColoHue" valueExist={253} valueTotal={255} />
+                <ProgressLevel title="Dimensions" valueExist={11} valueTotal={17} />
+                <ProgressLevel title="Layers" valueExist={3} valueTotal={3} />
               </div>
             </div>
             <div className="flex flex-col">
@@ -82,6 +83,7 @@ function CardPage() {
             </div>
           </div>
         </div>
+        <Carousel />
       </div>
     </Layout>
   )
