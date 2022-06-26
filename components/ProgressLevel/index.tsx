@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 
-export default function PropgesLevel({ title, valueExist, valueTotal }) {
+export default function ProgressLevel({ title, valueExist, valueTotal }) {
   const percent = useMemo(() => {
     return Math.floor((valueExist * 100) / valueTotal) + '%'
   }, [valueExist, valueTotal])
