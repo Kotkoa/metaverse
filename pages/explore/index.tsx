@@ -11,7 +11,7 @@ export default function Explore() {
         <div className="relative w-full h-auto mt-16">
           <Image src={Banner} alt="Banner" layout="responsive" />
           <div className="absolute top-0 left-0 z-10 w-full h-full text-center">
-            <p className="font-bold text-[70px] tracking-widester mt-[4%]">EXPLORE</p>
+            <p className="font-bold text-[70px] tracking-widester mt-[5%]">EXPLORE</p>
           </div>
           <div className="absolute left-0 z-20 flex flex-col items-center justify-between w-full text-center -bottom-6">
             <SortForm />
