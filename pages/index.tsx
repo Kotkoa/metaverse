@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <Layout>
       <section className="flex h-auto min-h-[934px]">
         <div className="mt-[217px] w-1/2 pr-[82px] pl-[120px]">
-          <h1 className=" text-[70px] font-bold uppercase tracking-widester text-white text-opacity-90">
+          <h1 className=" text-[70px] font-bold uppercase tracking-wide text-white text-opacity-90">
             Start your game jorney here
           </h1>
           <p className="mt-[30px] text-lg font-normal leading-[30px] text-white text-opacity-60">
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
             dignissim viverra.
           </p>
           <Link href="/explore">
-            <button className="my-[44px] rounded-[28px] bg-gradient-to-r from-[#FD6D1D] to-[#E53AD2] px-12 py-2.5 tracking-widestmore text-white text-opacity-90">
+            <button className="my-[44px] rounded-[28px] bg-gradient-to-r from-[#FD6D1D] to-[#E53AD2] px-12 py-2.5 tracking-widest text-white text-opacity-90">
               Explore
             </button>
           </Link>
