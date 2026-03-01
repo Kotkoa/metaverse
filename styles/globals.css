@@ -2,15 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  body {
-    font-family: 'Poppins', sans-serif;
-  }
-} */
-
 @font-face {
   font-family: 'Blantic';
-  src: url('/public/fonts/Blantic.ttf') format('ttf');;
+  src: url('/fonts/Blantic.ttf') format('truetype');
 }
 
 html,

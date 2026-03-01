@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function IconHeading({ icon, heading }) {
+export default function IconHeading({ icon, heading }: { icon: React.ReactNode; heading: string }) {
   return (
     <div className="flex items-center">
       {icon}

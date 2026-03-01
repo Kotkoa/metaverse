@@ -9,7 +9,7 @@ export default function Explore() {
     <Layout>
       <div className="mx-[120px] text-white text-opacity-90">
         <div className="relative w-full h-auto mt-16">
-          <Image src={Banner} alt="Banner" layout="responsive" />
+          <Image src={Banner} alt="Banner" sizes="100vw" style={{ width: '100%', height: 'auto' }} priority />
           <div className="absolute top-0 left-0 z-10 w-full h-full text-center">
             <p className="font-bold text-[70px] tracking-widester mt-[5%]">EXPLORE</p>
           </div>

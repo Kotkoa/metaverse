@@ -1,7 +1,10 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
+import heroImage from '../public/png/first_page.png'
 import { AchievementSection } from '../components/AchievementSection'
 import Layout from '../components/Layout'
+import { CARDS } from '../data/cards'
 
 const Home: NextPage = () => {
   return (
@@ -22,64 +25,10 @@ const Home: NextPage = () => {
           </Link>
         </div>
         <div className="w-1/2">
-          <img src="/png/first_page.png" alt="" className="w-full" />
+          <Image src={heroImage} alt="Metaverse hero" sizes="50vw" style={{ width: '100%', height: 'auto' }} priority />
         </div>
       </section>
-      <AchievementSection
-        achievementCards={[
-          {
-            name: 'Tomahavk',
-            highestBid: 'Highest Bid 1/1',
-            price: '0.047 ETH',
-            time: '08:10:00',
-            like: true
-          },
-          {
-            name: 'Tomahavk',
-            highestBid: 'Highest Bid 1/1',
-            price: '0.047 ETH',
-            time: '08:10:00',
-            like: true
-          },
-          {
-            name: 'Tomahavk',
-            highestBid: 'Highest Bid 1/1',
-            price: '0.047 ETH',
-            time: '08:10:00',
-            like: true
-          },
-          {
-            name: 'Tomahavk',
-            highestBid: 'Highest Bid 1/1',
-            price: '0.047 ETH',
-            time: '08:10:00',
-            like: true
-          },
-          {
-            name: 'Tomahavk',
-            highestBid: 'Highest Bid 1/1',
-            price: '0.047 ETH',
-            time: '08:10:00',
-            like: true
-          },
-          {
-            name: 'Tomahavk',
-            highestBid: 'Highest Bid 1/1',
-            price: '0.047 ETH',
-            time: '08:10:00',
-            like: true
-          },
-          {
-            name: 'Tomahavk',
-            highestBid: 'Highest Bid 1/1',
-            price: '0.047 ETH',
-            time: '08:10:00',
-            like: true
-          },
-          { name: 'Tomahavk', highestBid: 'Highest Bid 1/1', price: '0.047 ETH', time: '08:10:00', like: true }
-        ]}
-        title="Gears"
-      />
+      <AchievementSection achievementCards={CARDS.slice(0, 8)} title="Gears" />
     </Layout>
   )
 }

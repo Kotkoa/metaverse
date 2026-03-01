@@ -1,14 +1,17 @@
 import { Card } from '../Card'
+import { CardData } from '../../data/cards'
 
-const AchievementSection = ({ title, achievementCards }) => {
+const AchievementSection = ({ title, achievementCards }: { title: string; achievementCards: CardData[] }) => {
   return (
     <section className="mt-20 px-[120px]">
       <h1 className="text-xl font-semibold tracking-widest text-white text-opacity-90">{title}</h1>
       <div className="grid grid-cols-1 gap-6 mt-10 justify-items-center sm:grid-cols-2 lg:grid-cols-4">
         {achievementCards.map((card) => (
           <Card
-            key={card.name}
+            key={card.id}
             name={card.name}
+            slug={card.slug}
+            image={card.image}
             highestBid={card.highestBid}
             price={card.price}
             time={card.time}

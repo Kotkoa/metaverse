@@ -1,34 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Metaverse — NFT Marketplace
+
+A concept NFT marketplace web application for browsing and trading NFT game cards. Built with Next.js 15, React 19, TypeScript 5, and Tailwind CSS 3.4.
+
+## Demo
+
+**Live:** [https://kotkoa.github.io/metaverse](https://kotkoa.github.io/metaverse)
+
+## Pages
+
+- **Home** (`/`) — Hero section with a call-to-action and a grid of NFT cards
+- **Explore** (`/explore`) — Browse cards with filters (Blockchain, Category, Collections, Price Range, etc.)
+- **Card Details** (`/cards/[name]`) — Full card view with properties, stats, bid table, progress levels, and a carousel
+
+## Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org/) (Pages Router)
+- **UI:** [React 19](https://react.dev/)
+- **Language:** [TypeScript 5](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS 3.4](https://tailwindcss.com/)
+- **UI Components:** [Headless UI 2](https://headlessui.com/) (Listbox)
+- **SVG:** [@svgr/webpack 8](https://react-svgr.com/) (import SVGs as React components)
+- **Deployment:** GitHub Pages via GitHub Actions
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.18+
+- npm
+
+### Install & Run
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Build
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm run build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Lint
 
-## Learn More
+```bash
+npm run lint
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+pages/              — Next.js pages (index, explore, cards/[name])
+components/         — Reusable React components
+  Card/             — NFT card component
+  Carousel/         — Card carousel
+  Header/           — App header with logo and wallet button
+  Layout/           — Page layout wrapper
+  Select/           — Dropdown select (Headless UI Listbox)
+  BidTable/         — Bid info and action buttons
+  ProgressLevel/    — Progress bar with percentage
+  SortForm/         — Filter/sort form for Explore page
+styles/             — Global CSS (Tailwind + custom fonts)
+public/             — Static assets (SVG icons, PNG images, fonts)
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The project is configured for automatic deployment to GitHub Pages via GitHub Actions. Every push to `main` triggers a build and deploy.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT

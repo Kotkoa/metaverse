@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CardPageButton({ property, value }) {
+function CardPageButton({ property, value }: { property: string; value: string }) {
   return (
     <button>
       <div className="bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] p-px rounded-2xl">

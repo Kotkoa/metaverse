@@ -14,6 +14,15 @@ export default function IndexTable({
   serviceFee,
   totalEth,
   totalUsd
+}: {
+  fullName: string
+  priceEth: string
+  priceUsd: string
+  clickBuy: () => void
+  clickBid: () => void
+  serviceFee: string
+  totalEth: string
+  totalUsd: string
 }) {
   return (
     <div className=" mt-[58px] bg-gradient-to-br from-[#FD6D1D] to-[#E53AD2] p-px rounded-[18px]">
