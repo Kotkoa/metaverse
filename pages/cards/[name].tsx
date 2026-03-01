@@ -36,7 +36,7 @@ function CardPage({ card }: { card: CardData }) {
           <div className="w-1/2 pr-3">
             <div className="relative aspect-square overflow-hidden rounded-2xl">
               <Image
-                src={card.image}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${card.image}`}
                 alt={card.name}
                 fill
                 sizes="50vw"

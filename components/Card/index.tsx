@@ -17,7 +17,7 @@ const Card = ({ name, slug, image, highestBid, price, time, like }: {
     <div className="max-h-[404px] w-full max-w-[282px] rounded-[18px] bg-[#2B2E35] p-3.5 shadow-md">
       <div className="relative aspect-square overflow-hidden rounded-xl">
         <Link href={`/cards/${slug}`}>
-          <Image src={image} alt={name} fill sizes="254px" className="object-cover" />
+          <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${image}`} alt={name} fill sizes="254px" className="object-cover" />
         </Link>
         <div className="absolute top-[10px] left-[10px] flex content-center rounded-[20px] bg-[#2B2E35] py-2.5 pl-[14px] pr-[18px]">
           <Clock />
