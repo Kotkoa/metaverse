@@ -15,7 +15,6 @@ const AchievementSection = ({ title, achievementCards }: { title: string; achiev
             highestBid={card.highestBid}
             price={card.price}
             time={card.time}
-            like={card.like}
           />
         ))}
       </div>

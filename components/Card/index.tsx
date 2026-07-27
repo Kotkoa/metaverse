@@ -4,14 +4,13 @@ import Clock from '../../public/svg/Card/clock.svg'
 import Heart from '../../public/svg/Card/heart.svg'
 import Ethereum from '../../public/svg/Card/ethereum.svg'
 
-const Card = ({ name, slug, image, highestBid, price, time, like }: {
+const Card = ({ name, slug, image, highestBid, price, time }: {
   name: string
   slug: string
   image: string
   highestBid: string
   price: string
   time: string
-  like: boolean
 }) => {
   return (
     <div className="max-h-[404px] w-full max-w-[282px] rounded-[18px] bg-[#2B2E35] p-3.5 shadow-md">

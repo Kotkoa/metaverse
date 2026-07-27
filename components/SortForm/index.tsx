@@ -92,16 +92,3 @@ export default function index() {
     </div>
   )
 }
-
-const buttonsLeft = [
-  { icon: <Token />, name: 'Blockhain', selection: ['option1', 'option2', 'option3', 'option4', 'option5'] },
-  { icon: <Ineterst />, name: 'Category', selection: ['option1', 'option2', 'option3', 'option4', 'option5'] },
-  { icon: <Hive />, name: 'Collections', selection: ['option1', 'option2', 'option3', 'option4', 'option5'] },
-  { icon: <Local />, name: 'Price Range', selection: ['option1', 'option2', 'option3', 'option4', 'option5'] },
-  { icon: <Roket />, name: 'On Sale', selection: ['option1', 'option2', 'option3', 'option4', 'option5'] }
-]
-
-const buttonsRight = [
-  { icon: <Filter />, name: 'Filter', selection: ['option1', 'option2', 'option3', 'option4', 'option5'] },
-  { icon: <Sort />, name: 'Sort By', selection: ['option1', 'option2', 'option3', 'option4', 'option5'] }
-]

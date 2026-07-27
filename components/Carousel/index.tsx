@@ -4,7 +4,7 @@ import Toll from '../../public/svg/CardPage/toll.svg'
 import ArrowLeft from '../../public/svg/CardPage/arrow_left.svg'
 import ArrowRight from '../../public/svg/CardPage/arrow_right.svg'
 import { Card } from '../Card/index'
-import { CARDS, CardData } from '../../data/cards'
+import { CARDS } from '../../data/cards'
 
 const Carousel = ({ excludeSlug }: { excludeSlug?: string }) => {
   const cards = excludeSlug ? CARDS.filter((c) => c.slug !== excludeSlug) : CARDS
@@ -28,7 +28,6 @@ const Carousel = ({ excludeSlug }: { excludeSlug?: string }) => {
             highestBid={card.highestBid}
             price={card.price}
             time={card.time}
-            like={card.like}
           />
         ))}
       </div>
